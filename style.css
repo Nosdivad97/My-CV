@@ -1,0 +1,250 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #77448b;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7rem;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+h4 {
+  color: rgb(54, 54, 54);
+}
+
+li {
+  list-style-type: disc;
+}
+
+li::marker {
+  color: var(--primary-color);
+  font-size: 25px;
+}
+
+.wrapper {
+  max-width: 1000px;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: rgb(247, 247, 247);
+}
+
+.header .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .wrapper .social {
+  display: flex;
+  max-width: 800px;
+  justify-content: space-between;
+}
+
+.social span {
+  /* font-size: 20px; */
+  font-weight: bold;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.header img {
+  height: 15px;
+  width: 15px;
+}
+
+.header .email img {
+  width: 20px;
+}
+
+.header .address {
+  margin: 30px 0 25px 0;
+  font-size: 1.3rem;
+}
+
+/* Main */
+.main {
+  display: flex;
+  justify-content: center;
+  /* letter-spacing: 1px; */
+}
+
+.main img {
+  height: 35px;
+  width: 35px;
+  margin-right: 20px;
+}
+
+.main .wrapper > div {
+  display: flex;
+  margin: 40px 0;
+}
+
+.main h2 {
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+/* Professional summary */
+.professional-summary p {
+  color: rgb(82, 82, 82);
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  text-align: justify;
+}
+
+/* Personal data */
+.personal-data {
+  width: 100%;
+}
+
+.personal-data div {
+  width: 100%;
+}
+
+.personal-data .data-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  line-height: 2rem;
+}
+
+.personal-data .data-list .list-1 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: rgb(82, 82, 82);
+}
+
+.personal-data .data-list .list-2 {
+  color: rgb(82, 82, 82);
+  font-size: 1.1rem;
+}
+
+.personal-data li {
+  list-style: none;
+}
+
+/* Education */
+.education h4 {
+  padding: 10px 0;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.education div h4:nth-child(2) {
+  padding-top: 0;
+}
+
+.education h4 span {
+  color: var(--primary-color);
+}
+
+/* Experience */
+.experience h4 {
+  font-size: 1.2rem;
+}
+
+.experience h4 span {
+  color: var(--primary-color);
+}
+
+.experience p {
+  color: rgb(82, 82, 82);
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.experience > div > div:last-child p {
+  padding-bottom: 0;
+}
+
+.experience > div > div:nth-child(2) {
+  margin-top: 5px;
+}
+
+/* Skills */
+.skills {
+  width: 100%;
+}
+
+.skills div {
+  width: 100%;
+}
+
+.skills .skills-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: rgb(82, 82, 82);
+  font-size: 1.1rem;
+  line-height: 2rem;
+  padding: 0 25px;
+}
+
+/* Extracurricular-activities */
+.extra ul {
+  padding-top: 5px;
+  color: rgb(82, 82, 82);
+  font-size: 1.1rem;
+  line-height: 2rem;
+  padding: 0 25px;
+}
+
+/* Referees */
+.referees p {
+  color: rgb(82, 82, 82);
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+  line-height: 1.7rem;
+}
+
+@media screen and (max-width: 1050px) {
+  .header .wrapper .social {
+    flex-direction: column;
+    max-width: 800px;
+    align-items: center;
+  }
+
+  body {
+    transform: scale(0.7, 0.7);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    transform: scale(0.6, 0.6);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0;
+    margin: 0;
+    border: none;
+    transform: scale(0.5, 0.5);
+  }
+}
